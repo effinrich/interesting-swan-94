@@ -24,9 +24,9 @@ jobs:
           deno-version: v1.x
 
       - name: Install Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: lts/*
+          node-version: 20
 
       - name: Build step
         run: "npm install && npm run build" # 📝 Update the build command(s) if necessary
