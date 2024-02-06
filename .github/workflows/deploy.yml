@@ -24,9 +24,9 @@ jobs:
           deno-version: v1.x
 
       - name: Install Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: '20.x'
+          node-version: 20
 
       - name: Build step
         run: "npm install && npm run build" # 📝 Update the build command(s) if necessary
@@ -37,3 +37,5 @@ jobs:
           project: "interesting-swan-94"
           entrypoint: "index.js" # 📝 Update the entrypoint if necessary
           root: "build" # 📝 Update the root if necessary
+          node-version: 20
+          
